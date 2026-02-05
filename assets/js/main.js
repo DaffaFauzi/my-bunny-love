@@ -175,12 +175,15 @@ themeButton.addEventListener('click', () => {
 
 /*==================== PLAY MUSIC ON SCROLL ====================*/
 const bgMusic = document.getElementById('bg-music');
+const musicControl = document.getElementById('music-control');
+const musicIcon = musicControl.querySelector('.music-icon');
 let musicPlayed = false;
 
 function playMusic() {
     if (!musicPlayed) {
         bgMusic.play().then(() => {
             musicPlayed = true;
+            musicIcon.classList.add('music-spin');
             console.log("Music started!");
         }).catch(error => {
             console.log("Music play failed (user interaction might be needed):", error);
@@ -191,4 +194,16 @@ function playMusic() {
     }
 }
 
+function toggleMusic() {
+    if (bgMusic.paused) {
+        bgMusic.play();
+        musicIcon.classList.add('music-spin');
+        musicPlayed = true; // Ensure flag is set if manually played
+    } else {
+        bgMusic.pause();
+        musicIcon.classList.remove('music-spin');
+    }
+}
+
 window.addEventListener('scroll', playMusic);
+musicControl.addEventListener('click', toggleMusic);
