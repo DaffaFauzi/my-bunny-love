@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png">
+
+        <!--=============== REMIXICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        
+        <!--=============== SWIPER CSS ===============-->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>Dearest</title>
+    </head>
+    <body>
+        <audio id="bg-music" loop>
+            <source src="assets/audio/Seventeen - Menemukanmu (Official Music Video).mp3" type="audio/mp3">
+        </audio>
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">Dearest</a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">About</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#discover" class="nav__link">Memories</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#place" class="nav__link">Dearest</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav__dark">
+                        <!-- Theme change button -->
+                        <span class="change-theme-name">Dark mode</span>
+                        <i class="ri-moon-line change-theme" id="theme-button"></i>
+                    </div>
+
+                    <i class="ri-close-line nav__close" id="nav-close"></i>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-function-line"></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home" id="home">
+                <img src="assets/img/you2.jpg" alt="" class="home__img">
+
+                <div class="home__container container grid">
+                    <div class="home__data">
+                        <span class="home__data-subtitle">Memories with you</span>
+                        <h1 class="home__data-title">Brighter than<br> the stars, the most<br> <b>Beautiful</b> woman</h1>
+                        <a href="#about" class="button">Our Love Story</a>
+
+                    </div>
+
+                    <div class="home__social">
+                        <a href="#" target="_blank" class="home__social-link">
+                            <i class="ri-facebook-box-fill"></i>
+                        </a>
+                        <a href="#" target="_blank" class="home__social-link">
+                            <i class="ri-instagram-fill"></i>
+                        </a>
+                        <a href="#" target="_blank" class="home__social-link">
+                            <i class="ri-twitter-fill"></i>
+                        </a>
+                    </div>
+
+                    <div class="home__info">
+                        <div>
+                            <span class="home__info-title">Our Favorite</span>
+                            <a href="" class="button button--flex button--link home__info-button">
+                                View <i class="ri-arrow-right-line"></i>
+                            </a>
+                        </div>
+
+                        <div class="home__info-overlay">
+                            <img src="assets/img/you.jpg" alt="" class="home__info-img">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== ABOUT ====================-->
+            <section class="about section" id="about">
+                <div class="about__container container grid">
+                    <div class="about__data">
+                        <h2 class="section__title about__title">Our Story <br> How We Fell in Love</h2>
+                        <p class="about__description">I could make you happy, make your dreams come true. Nothing that I wouldn't do. Go to the ends of the earth for you to make you feel my love. 
+                        </p>
+                        <a href="#" class="button">Forever Yours</a>
+                    </div>
+
+                    <div class="about__img">
+                        <div class="about__img-overlay">
+                            <img src="assets/img/you3.jpg" alt="" class="about__img-one">
+                        </div>
+
+                        <div class="about__img-overlay">
+                            <img src="assets/img/you4.jpg" alt="" class="about__img-two">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!--==================== DISCOVER ====================-->
+            <section class="discover section" id="discover">
+                <h2 class="section__title">We have more <br> Memories</h2>
+                
+                <div class="discover__container container swiper-container">
+                    <div class="swiper-wrapper">
+                        <!--==================== DISCOVER 1 ====================-->
+                        <div class="discover__card swiper-slide">
+                            <img src="assets/img/you5.jpg" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">My Soulmate</h2>
+                                <span class="discover__description">Cherished Memories</span>
+                            </div>
+                        </div>
+
+                        <!--==================== DISCOVER 2 ====================-->
+                        <div class="discover__card swiper-slide">
+                            <img src="assets/img/you6.jpg" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">My Everything</h2>
+                                <span class="discover__description">Unforgettable Moments</span>
+                            </div>
+                        </div>
+
+                        <!--==================== DISCOVER 3 ====================-->
+                        <div class="discover__card swiper-slide">
+                            <img src="assets/img/you7.jpg" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">My Sunshine</h2>
+                                <span class="discover__description">Pure Happiness</span>
+                            </div>
+                        </div>
+
+                        <!--==================== DISCOVER 4 ====================-->
+                        <div class="discover__card swiper-slide">
+                            <img src="assets/img/you8.jpg" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">My One & Only</h2>
+                                <span class="discover__description">Endless Love</span>
+                            </div>
+                        </div>
+
+                        <div class="discover__card swiper-slide">
+                            <img src="assets/img/pict.jpg" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">My Heart</h2>
+                                <span class="discover__description">Better Together</span>
+                            </div>
+                        </div>
+
+                        <div class="discover__card swiper-slide">
+                            <img src="assets/img/pict2.jpg" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">My Forever</h2>
+                                <span class="discover__description">Love of my Life</span>
+                            </div>
+                        </div>
+
+                        <div class="discover__card swiper-slide">
+                            <img src="assets/img/pict3.jpg" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">My Joy</h2>
+                                <span class="discover__description">Every moment counts</span>
+                            </div>
+                        </div>
+
+                        <div class="discover__card swiper-slide">
+                            <img src="assets/img/pict4.jpg" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">My Dream</h2>
+                                <span class="discover__description">Dreams come true</span>
+                            </div>
+                        </div>
+
+                        <div class="discover__card swiper-slide">
+                            <img src="assets/img/you3.jpg" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">My Angel</h2>
+                                <span class="discover__description">Heaven sent</span>
+                            </div>
+                        </div>
+
+                        <div class="discover__card swiper-slide">
+                            <img src="assets/img/you4.jpg" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">My Love</h2>
+                                <span class="discover__description">Always & Forever</span>
+                            </div>
+                        </div>
+
+                        <div class="discover__card swiper-slide">
+                            <img src="assets/img/you.jpg" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">My First Love</h2>
+                                <span class="discover__description">Where it began</span>
+                            </div>
+                        </div>
+
+                        <div class="discover__card swiper-slide">
+                            <img src="assets/img/you2.jpg" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">My Beautiful</h2>
+                                <span class="discover__description">Stunning as always</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== EXPERIENCE ====================-->
+            <section class="experience section">
+                <h2 class="section__title">A Love for Eternity</h2>
+
+                <div class="experience__container container grid">
+                    <div class="experience__content">
+                         <p style="text-align: center; font-size: 1.25rem; font-style: italic; color: var(--title-color);">
+                            "Every day with you is a new adventure, a new reason to smile, and a new moment to cherish. You are my today and all of my tomorrows."
+                        </p>
+                    </div>
+
+                    <div class="experience__img grid">
+                        <div class="experience__overlay">
+                            <img src="assets/img/pict5.jpg" alt="" class="experience__img-one">
+                        </div>
+                        
+                        <div class="experience__overlay">
+                            <img src="assets/img/you2.jpg" alt="" class="experience__img-two">
+                        </div>
+
+                        <div class="experience__overlay">
+                            <img src="assets/img/pict3.jpg" alt="" class="experience__img-three">
+                        </div>
+
+                        <div class="experience__overlay">
+                            <img src="assets/img/you4.jpg" alt="" class="experience__img-four">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== VIDEO ====================-->
+            <section class="video section" id="place">
+                <h2 class="section__title">Our Video </h2>
+
+                <div class="video__container container">
+                    <p class="video__description">“I find the most beautiful moments of life aren't just with you but because of you.”
+                    </p>
+
+                    <div class="video__content">
+                        <video id="video-file">
+                            <source src="assets/video/video2.mp4" type="video/mp4">
+                        </video>
+
+                        <button class="button button--flex video__button" id="video-button">
+                            <i class="ri-play-line video__button-icon" id="video-icon"></i>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            
+
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <div class="footer__content grid">
+                    <div class="footer__data">
+                        <h3 class="footer__title">Dearest</h3>
+                        <p class="footer__description">Loving you, <br> wherever <br> I am.
+                        </p>
+                        <div>
+                            <a href="#" target="_blank" class="footer__social">
+                                <i class="ri-facebook-box-fill"></i>
+                            </a>
+                            <a href="#" target="_blank" class="footer__social">
+                                <i class="ri-twitter-fill"></i>
+                            </a>
+                            <a href="#" target="_blank" class="footer__social">
+                                <i class="ri-instagram-fill"></i>
+                            </a>
+                            <a href="#" target="_blank" class="footer__social">
+                                <i class="ri-youtube-fill"></i>
+                            </a>
+                        </div>
+                    </div>
+    
+                    <div class="footer__data">
+                        <h3 class="footer__subtitle">About</h3>
+                        <ul>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Our Story</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Our Future</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Love</a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    
+    
+                    <div class="footer__data">
+                        <h3 class="footer__subtitle">Support</h3>
+                        <ul>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Him</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Support</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Credits</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer__rights">
+                    <p class="footer__copy">&#169; 2026 Dearest. All rights reserved.</p>
+                    <div class="footer__terms">
+                        <a href="#" class="footer__terms-link">Terms & Agreements</a>
+                        <a href="#" class="footer__terms-link">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+         <!--========== SCROLL UP ==========-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="ri-arrow-up-line scrollup__icon"></i>
+        </a>
+
+        <!--=============== SCROLL REVEAL===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
+        
+        <!--=============== SWIPER JS ===============-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
