@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Remix Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>My Bunny Love</title>
+</head>
+<body>
+    <!-- Music Modal -->
+    <div class="music-modal" id="music-modal">
+        <div class="music-modal-content">
+            <h1 class="music-modal-title">Welcome Dearest</h1>
+            <p>Please click to enter our world</p>
+            <button class="music-modal-btn" id="music-modal-btn">
+                <i class="ri-heart-fill"></i> Enter
+            </button>
+        </div>
+    </div>
+
+    <!-- Music Control -->
+    <div class="music-control" id="music-control">
+        <i class="ri-music-2-line music-icon"></i>
+    </div>
+
+    <audio id="bg-music" loop>
+        <source src="assets/audio/music.mp3" type="audio/mp3">
+    </audio>
+
+    <main class="main">
+        <!-- HOME -->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__data">
+                    <span class="home__greeting">Hello, my love</span>
+                    <h1 class="home__title">Brighter than the stars</h1>
+                    <p class="home__description">The most beautiful woman in the world.</p>
+                    <a href="#about" class="button">Explore</a>
+                </div>
+                <div class="home__img">
+                    <img src="assets/img/you.jpg" alt="Beautiful You">
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section class="about section" id="about">
+            <div class="about__container container grid">
+                <div class="about__img">
+                    <img src="assets/img/you2.jpg" alt="About You">
+                </div>
+                <div class="about__data">
+                    <h2 class="section__title about__title">About You</h2>
+                    <p class="about__description">
+                        Every moment with you is a treasure. Your smile lights up my world.
+                        You are the reason for my happiness.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- DISCOVER (Swiper) -->
+        <section class="discover section" id="discover">
+            <h2 class="section__title">Memories</h2>
+            <div class="discover__container swiper-container">
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="discover__card swiper-slide">
+                        <img src="assets/img/pict.jpg" alt="" class="discover__img">
+                    </div>
+                    <div class="discover__card swiper-slide">
+                        <img src="assets/img/pict2.jpg" alt="" class="discover__img">
+                    </div>
+                    <div class="discover__card swiper-slide">
+                        <img src="assets/img/pict3.jpg" alt="" class="discover__img">
+                    </div>
+                    <div class="discover__card swiper-slide">
+                        <img src="assets/img/pict4.jpg" alt="" class="discover__img">
+                    </div>
+                    <div class="discover__card swiper-slide">
+                        <img src="assets/img/pict5.jpg" alt="" class="discover__img">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- VIDEO -->
+         <section class="video section">
+            <h2 class="section__title">Our Moment</h2>
+            <div class="video__container container">
+                <video controls width="100%" style="border-radius: 1rem;">
+                    <source src="assets/video/video2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+         </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer section">
+        <div class="footer__container container grid">
+            <div class="footer__content">
+                <h3 class="footer__title">My Bunny Love</h3>
+                <p class="footer__description">Forever & Always.</p>
+            </div>
+        </div>
+        <p class="footer__copy">&#169; 2026. All rights reserved.</p>
+    </footer>
+
+    <!-- Scroll Reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
