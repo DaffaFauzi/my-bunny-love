@@ -331,9 +331,14 @@ input {
 }
 
 .home__social {
+  position: absolute;
+  left: 0;
+  bottom: 2rem;
   display: flex;
-  flex-direction: column;
-  row-gap: 1.5rem;
+  flex-direction: row;
+  column-gap: 1.5rem;
+  align-items: center;
+  z-index: 10;
 }
 
 .home__social-link {
@@ -452,6 +457,7 @@ input {
 .discover__card {
   position: relative;
   width: 200px;
+  height: 320px;
   overflow: var(--img-hidden);
 }
 
@@ -477,6 +483,9 @@ input {
 }
 
 .discover__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   transition: var(--img-transition);
 }
 
@@ -959,6 +968,7 @@ input {
     align-self: flex-end;
   }
   .home__social {
+    position: relative;
     flex-direction: row;
     align-self: flex-end;
     margin-bottom: 3rem;
@@ -1013,9 +1023,9 @@ input {
   }
 }
 
-/* For large devices */
 @media screen and (min-width: 1024px) {
   .container {
+    max-width: 1024px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -1067,9 +1077,6 @@ input {
   .video__container {
     grid-template-columns: .7fr;
   }
-  .video__description {
-    padding: 0 8rem;
-  }
   .place__container {
     gap: 3rem 2rem;
   }
@@ -1094,5 +1101,59 @@ input {
   }
   .home__container, .home__img {
     height: 640px;
+  }
+}
+
+/*==================== OVERLAY ====================*/
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 10000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
+}
+
+.overlay__content {
+  text-align: center;
+}
+
+.overlay__title {
+  color: var(--white-color);
+  font-size: var(--biggest-font-size);
+  margin-bottom: var(--mb-2);
+  text-shadow: 0 4px 8px rgba(0,0,0,0.5);
+}
+
+.overlay__button {
+  font-size: var(--h2-font-size);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+}
+
+.overlay.hide {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/*==================== FALLING HEARTS ====================*/
+.heart {
+  position: fixed;
+  top: -10vh;
+  transform: translateY(0);
+  animation: fall 4s linear forwards;
+  z-index: 9999;
+  font-size: 1.5rem;
+  color: var(--first-color);
+  opacity: 0.8;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(110vh);
   }
 }

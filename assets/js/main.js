@@ -194,11 +194,27 @@ function playMusic() {
     }
 }
 
+function createHeart() {
+    const heart = document.createElement('div');
+    heart.classList.add('heart');
+    heart.innerHTML = '❤️';
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.animationDuration = Math.random() * 2 + 3 + "s";
+    heart.style.fontSize = Math.random() * 1 + 1 + "rem"; // Random size
+    document.body.appendChild(heart);
+
+    setTimeout(() => {
+        heart.remove();
+    }, 5000);
+}
+
 function toggleMusic() {
     if (bgMusic.paused) {
         bgMusic.play();
         musicIcon.classList.add('music-spin');
         musicPlayed = true; // Ensure flag is set if manually played
+        // Start hearts when music plays
+        setInterval(createHeart, 300);
     } else {
         bgMusic.pause();
         musicIcon.classList.remove('music-spin');
@@ -207,3 +223,23 @@ function toggleMusic() {
 
 window.addEventListener('scroll', playMusic);
 musicControl.addEventListener('click', toggleMusic);
+
+/*==================== OVERLAY START ====================*/
+const overlay = document.getElementById('overlay');
+const overlayButton = document.getElementById('overlay-button');
+
+if(overlayButton){
+    overlayButton.addEventListener('click', () => {
+        overlay.classList.add('hide');
+        if (!musicPlayed) {
+            bgMusic.play().then(() => {
+                musicPlayed = true;
+                musicIcon.classList.add('music-spin');
+                // Start hearts when overlay is clicked
+                setInterval(createHeart, 300);
+            }).catch(error => {
+                console.log("Music play failed:", error);
+            });
+        }
+    });
+}
